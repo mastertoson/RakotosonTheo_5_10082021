@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  const apiurl = "http://localhost:3000/api";
+  const apiurl = "https://teddies-api.herokuapp.com/api";
   
   const cards = document.querySelector('#cards');
   
