@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\JWDP5-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Projet_5",
+		"liveServer.settings.port": 5501
+	}
+}
