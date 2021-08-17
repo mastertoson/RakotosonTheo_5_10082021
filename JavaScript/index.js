@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   const apiurl = "https://teddies-api.herokuapp.com/api";
   
-  const cards = document.querySelector('#cards');
+  const cards = document.querySelector('.cards_container');
   
 
 
@@ -40,29 +40,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
     name.innerHTML = element.name;
     // description
     description.innerHTML = element.description;
-    // lenses
-    // lenses.innerHTML = element.lenses;
-    // links
-    // link.innerHTML = "oui";
+   
 
     // attribution classes
-    div.setAttribute("class", "div", "href");
+    div.setAttribute("class", "cards", "href");
     div.setAttribute("href","item.html"+ "?id=" + element._id);
     price.setAttribute("class", "price");
     name.setAttribute("class", "name");
     img.setAttribute("class", "img");
     img.setAttribute("src", element.imageUrl);
     img.setAttribute("alt", element.name);
-    // lenses.setAttribute("class", "lenses");
     description.setAttribute("class", "description");
-    // link.setAttribute("class","link");
-    // link.setAttribute("href","item.html"+ "?id=" + element._id);
+    
 
     // ordre DOM
     cards.prepend(div);
-    // div.prepend(link);
     div.prepend(description);
-    // div.prepend(lenses);
     div.prepend(price);
     div.prepend(name);
     div.prepend(img);
