@@ -1,73 +1,66 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+* {
   margin: 0;
   font-family: "Helvetica Neue",sans-serif;
- 
 }
 
-body{
-  background: #635e58;
-  min-height: 100vh;
-}
-#cards {
-  padding-top: 100px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-.div{
-  background: #fff;
-  border-radius: 20px;
-  margin: 80px;
-  height: 420px;
-  width: 300px; 
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  text-decoration: none;
-  color: black;
-
-  display: grid; 
-  grid-template-columns: 1fr 1fr 0.9fr; 
-  grid-template-rows: 2.4fr 0.4fr 0.9fr 0.3fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "img img img"
-    "name name name"
-    "description description description"
-    "price price price";
-}
-
-.div:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    color: black;
-  }
-
-.name { 
-  grid-area: name; 
-
-  font-weight: bold;
-}
-
-.description { 
-  grid-area: description; 
-}
-
-.price { 
-  grid-area: price;
-  font-weight: bold;
- }
-
-.link { 
-  grid-area: link;
- }
-
-.img{
-  object-fit: cover;
+header {
   width: 100%;
-  height: 200px;
-  border-radius: 20px;
-  box-shadow: 0 5px 8px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.22);
-  grid-area: img;
+  height: 80px;
+  background-size: cover;
+  background: #535353;
+  position: fixed;
+}
+
+header nav {
+  position: fixed;
+  width: 100%;
+}
+
+header nav .logo {
+  position: fixed;
+  float: left;
+  margin: 0 20px;
+  font-weight: bold;
+  width: 150px;
+  height: 70px;
+}
+
+header nav .menu ul {
+  line-height: 60px;
+  list-style: none;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header nav .menu ul li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+header nav .menu nav ul li a, header nav .menu i {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+header nav .menu .basket {
+  padding-right: 0;
+}
+
+header nav .menu .counter {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #635e58;
 }
 
 footer {
@@ -75,81 +68,75 @@ footer {
   padding: 10px;
   text-align: center;
   color: #fff;
-  font-size: 16px;  
+  font-size: 16px;
 }
 
-
-
-  /* oui */
-
-
-
-header {
-    width: 100%;
-    height: 80px;
-    background-size: cover;
-    background: rgb(83, 83, 83);
-    position:fixed;
+.cards_container {
+  padding-top: 100px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.content {
-    width: 94%;
-    margin: 4em auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
+.cards_container .cards {
+  background: #fff;
+  border-radius: 20px;
+  margin: 80px;
+  height: 420px;
+  width: 300px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-decoration: none;
+  color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 0.9fr;
+      grid-template-columns: 1fr 1fr 0.9fr;
+  -ms-grid-rows: 2.4fr 0.4fr 0.9fr 0.3fr;
+      grid-template-rows: 2.4fr 0.4fr 0.9fr 0.3fr;
+  gap: 0px 0px;
+      grid-template-areas: "img img img" "name name name" "description description description" "price price price";
 }
 
-.logo {
-    position: fixed;
-    float: left;
-    margin: 0 20px;
-    font-weight: bold;
-    width: 150px;
-    height: 70px;
+.cards_container .cards .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: img;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    
+.cards_container .cards .name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: name;
+  font-weight: bold;
 }
 
-nav ul {
-    line-height: 60px;
-    list-style: none;
-    color: #fff;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    padding-right: 40px;
-    transition: 1s;
+.cards_container .cards .description {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: description;
 }
 
-nav.black ul {
-    background: #000;
+.cards_container .cards .price {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: price;
+  font-weight: bold;
 }
-
-nav ul li {
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-nav ul li a, i {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-}
-
-.basket{
-  padding-right: 0;
-}
-.counter{
-  margin:0;
-  padding:0;
-}
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */
