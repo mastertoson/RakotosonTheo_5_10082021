@@ -1,9 +1,7 @@
-*{
+* {
     margin: 0;
-    font-family: "Helvetica Neue",sans-serif;
-   
-  }
-
+    font-family: "Helvetica Neue", sans-serif;
+}
 
 // header //
 
@@ -11,13 +9,13 @@ header {
     width: 100%;
     height: 80px;
     background-size: cover;
-    background: rgb(83, 83, 83);
-    position:fixed;
+    background: RGBA(0,2,36,0.35);
+    position: fixed;
 
     nav {
         position: fixed;
         width: 100%;
-        
+
         .logo {
             position: fixed;
             float: left;
@@ -27,9 +25,7 @@ header {
             height: 70px;
         }
 
-        .menu{
-
-
+        .menu {
             ul {
                 line-height: 60px;
                 list-style: none;
@@ -39,38 +35,34 @@ header {
                 margin: 0;
                 padding-right: 40px;
                 transition: 1s;
-            }
 
-            ul li {
-                display: inline-block;
-                padding: 10px 20px;
-            }
-            nav ul li a, i {
-                text-decoration: none;
-                color: #fff;
-                font-size: 16px;
-            }
-            
-            .basket{
-              padding-right: 0;
-            }
-            .counter{
-              margin:0;
-              padding:0;
-            }
+                li {
+                    display: inline-block;
+                    padding: 10px 20px;
 
+                    a {
+                        color: #fff;
+                        font-size: 16px;
+                        text-decoration: none;
+                    }
 
+                    .basket {
+                        padding-right: 0;
+                    }
+                    .counter {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
         }
     }
 }
 
-
-
-
 // body //
 
-body{
-    background: #635e58;;
+body {
+    background: #FFFFFF;
 }
 // footer //
 
@@ -79,5 +71,5 @@ footer {
     padding: 10px;
     text-align: center;
     color: #fff;
-    font-size: 16px;  
-  }
+    font-size: 16px;
+}

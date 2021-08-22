@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
 * {
   margin: 0;
-  font-family: "Helvetica Neue",sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 header {
   width: 100%;
   height: 80px;
   background-size: cover;
-  background: #535353;
+  background: RGBA(0, 2, 36, 0.35);
   position: fixed;
 }
 
@@ -44,23 +44,23 @@ header nav .menu ul li {
   padding: 10px 20px;
 }
 
-header nav .menu nav ul li a, header nav .menu i {
-  text-decoration: none;
+header nav .menu ul li a {
   color: #fff;
   font-size: 16px;
+  text-decoration: none;
 }
 
-header nav .menu .basket {
+header nav .menu ul li .basket {
   padding-right: 0;
 }
 
-header nav .menu .counter {
+header nav .menu ul li .counter {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #635e58;
+  background: #FFFFFF;
 }
 
 footer {
@@ -84,59 +84,56 @@ footer {
 .cards_container .cards {
   background: #fff;
   border-radius: 20px;
-  margin: 80px;
-  height: 420px;
-  width: 300px;
+  margin: 20px;
+  height: 350px;
+  width: 20%;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   text-decoration: none;
   color: black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 0.9fr;
-      grid-template-columns: 1fr 1fr 0.9fr;
-  -ms-grid-rows: 2.4fr 0.4fr 0.9fr 0.3fr;
-      grid-template-rows: 2.4fr 0.4fr 0.9fr 0.3fr;
-  gap: 0px 0px;
-      grid-template-areas: "img img img" "name name name" "description description description" "price price price";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cards_container .cards:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: black;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .cards_container .cards .img {
+  height: auto;
+  border-radius: 20px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 200px;
-  border-radius: 20px;
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
           box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: img;
 }
 
-.cards_container .cards .name {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: name;
+.cards_container .cards .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: bold;
 }
 
-.cards_container .cards .description {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: description;
+.container {
+  width: 50%;
+  height: 50%;
 }
 
-.cards_container .cards .price {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: price;
-  font-weight: bold;
+#image {
+  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
