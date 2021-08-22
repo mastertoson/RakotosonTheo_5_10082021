@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <title>orinoco</title>
-    <link rel="icon" href="images/icon.png">
-    <link rel="stylesheet" href="CSS/style.css">
-    <!-- cdn fontawesome -->
-    <script src="https://kit.fontawesome.com/3ae102a438.js" crossorigin="anonymous"></script>
+   <meta charset="UTF-8">
+   <title>orinoco</title>
+   <!-- icon -->
+   <link rel="icon" href="images/icon.png">
+   <!-- bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <!-- style -->
+   <link rel="stylesheet" href="CSS/style.css">
 </head>
-    <!-- script -->
-    <script src="JavaScript/index.js" ></script>
-    
+
 <body>
-    <header>
-        <nav>
-           <div class="logo">
-              <a href="index.html"><img src="images/orinoco1.png" class="logo"  alt="logo"></a>
-           </div>
-           <div class="menu">
-              <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="#">Contact</a></li>
-                 <li><i class="fas fa-shopping-basket"></i></li>
-                 <li class="counter"> <span id='counter'>0</span></li>
-              </ul>
-           </div>
-        </nav>
-    </header>
+   <header>
+      <nav>
+         <div class="navbar_header">
+            <a href="index.html">
+               <img src="images/orinoco1.png" class="orinoco_icon" alt="orinoco">
+            </a>
+
+            <button class="navbar-toggler  navbar_button_container" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+               aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fas fa-bars navbar_button"></i>
+            </button>
+         </div>
+         <div class="navbar_menu  collapse" id="navbarScroll">
+            <ul class="menu_container ">
+               <li class="menu_button"><a href="index.html">Acceuil</a></li>
+               <li class="menu_button"><a href="#">Panier</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
 
 
-    <section class="cards_container">
-     
-    </section>
+   <main class="cards_container">
 
-    <footer>
-      <div>
-         <p>oui</p>
-      </div>
-    </footer>
+   </main>
+
+   <footer >
+      <p>Orinoco</p>
+   </footer>
+
+
+   <!-- script -->
+   <script src="JavaScript/index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+   <!-- cdn fontawesome -->
+   <script src="https://kit.fontawesome.com/3ae102a438.js" crossorigin="anonymous"></script>
+
 </body>
-</html>
 
+</html>

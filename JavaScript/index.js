@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
      </div>
      <div class="description">
      <p>${element.description}</p>
-     </div>
-     <input type="button" onclick="window.location.href='item.html?_id=${element._id}';" value="achat"></input>
+     </div> 
+     <input class="achat btn btn-secondary col-2" type="button" onclick="window.location.href='item.html?_id=${element._id}';" value="acheter"></input>
     </div>`;
   }
  

@@ -5,31 +5,31 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  padding: 2rem;
 
   .cards {
     background: #fff;
-    border-radius: 20px;
-    margin: 20px;
-    height: 350px;
-    width: 20%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .25), 0 1px 2px rgba(0, 0, 0, 0.24);
     text-decoration: none;
     color: black;
     display: flex;
     flex-direction: column;
-    
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-bottom: 3rem;
+    width: 100%;
+    border: solid 0.1rem rgba(5, 5, 5, 0.199);
+    padding: 2rem;
     &:hover {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-      color: black;
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
     .img {
-
       height: auto;
-      border-radius: 20px;
       width: 100%;
       object-fit: cover;
       box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+      margin-bottom: 2rem;
+      border-radius: 2rem;
      
     }
 
@@ -37,12 +37,20 @@
       display: flex;
       justify-content: space-between;
       font-weight: bold;
+      font-size: 2rem;
     }
 
     .description {
-      
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 2rem;
     }
 
+    .achat{
+      height: 5rem;
+      font-size: 2rem;
+    }
     
   }
 }

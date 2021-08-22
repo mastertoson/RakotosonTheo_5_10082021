@@ -7,69 +7,64 @@
 
 header {
     width: 100%;
-    height: 80px;
-    background-size: cover;
-    background: RGBA(0,2,36,0.35);
-    position: fixed;
+    height: 20%;
 
-    nav {
-        position: fixed;
+    .navbar_header {
         width: 100%;
-
-        .logo {
-            position: fixed;
-            float: left;
-            margin: 0 20px;
-            font-weight: bold;
-            width: 150px;
-            height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        .orinoco_icon {
+            height: 8em;
         }
+        .navbar_button_container {
+            .navbar_button{
+                font-size: 4rem;
+            }
 
-        .menu {
-            ul {
-                line-height: 60px;
-                list-style: none;
-                color: #fff;
-                padding: 0;
-                text-align: right;
-                margin: 0;
-                padding-right: 40px;
-                transition: 1s;
+        }
+       
+    }
 
-                li {
-                    display: inline-block;
-                    padding: 10px 20px;
-
-                    a {
-                        color: #fff;
-                        font-size: 16px;
-                        text-decoration: none;
-                    }
-
-                    .basket {
-                        padding-right: 0;
-                    }
-                    .counter {
-                        margin: 0;
-                        padding: 0;
-                    }
+    .navbar_menu {
+        
+        .menu_container {
+            list-style-type: none;
+            
+            .menu_button {
+               
+                a {
+                    color: rgb(0, 0, 0);
+                    font-size: 4rem;
+                    font-weight: bolder;
+                    text-decoration: none;
                 }
             }
+
         }
+    
+    }
+}
+// footer //
+ 
+footer {
+    background: #14141473;
+    height: 10rem;
+    width: 100%;
+    
+    p{
+        text-align: center;
+        font-size: 2em;
+        font-weight: bolder;
     }
 }
 
-// body //
+// responsive desktop
+@media screen and (min-width: 1440px){
 
-body {
-    background: #FFFFFF;
-}
-// footer //
-
-footer {
-    background: #353535;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
+    
+    
+    
+ 
 }
