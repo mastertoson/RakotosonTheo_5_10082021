@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
 * {
   margin: 0;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
 }
 
 header {
@@ -22,14 +22,22 @@ header .navbar_header {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
 }
 
 header .navbar_header .orinoco_icon {
-  height: 8em;
+  height: 7em;
 }
 
 header .navbar_header .navbar_button_container .navbar_button {
   font-size: 4rem;
+}
+
+header .navbar_menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .navbar_menu .menu_container {
@@ -38,8 +46,7 @@ header .navbar_menu .menu_container {
 
 header .navbar_menu .menu_container .menu_button a {
   color: black;
-  font-size: 4rem;
-  font-weight: bolder;
+  font-size: 3rem;
   text-decoration: none;
 }
 
@@ -53,6 +60,22 @@ footer p {
   text-align: center;
   font-size: 2em;
   font-weight: bolder;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar_header .navbar_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-expand-lg .navbar_header .navbar_menu .menu_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-expand-lg .navbar_header .navbar_menu .menu_container .menu_button {
+    margin-right: 2rem;
+  }
 }
 
 .cards_container {
@@ -119,7 +142,7 @@ footer p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .cards_container .cards .achat {
@@ -128,11 +151,18 @@ footer p {
 }
 
 .container {
-  width: 50%;
-  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#image {
-  width: 300px;
+.container .card {
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */

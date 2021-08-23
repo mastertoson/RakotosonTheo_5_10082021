@@ -1,6 +1,7 @@
+// global //
 * {
     margin: 0;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
 }
 
 // header //
@@ -15,45 +16,39 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 10px;
+        flex-wrap: inherit;
         .orinoco_icon {
-            height: 8em;
+            height: 7em;
         }
         .navbar_button_container {
-            .navbar_button{
+            .navbar_button {
                 font-size: 4rem;
             }
-
         }
-       
     }
 
     .navbar_menu {
-        
+        align-items: center;
         .menu_container {
             list-style-type: none;
-            
             .menu_button {
-               
                 a {
                     color: rgb(0, 0, 0);
-                    font-size: 4rem;
-                    font-weight: bolder;
+                    font-size: 3rem;
                     text-decoration: none;
                 }
             }
-
         }
-    
     }
 }
 // footer //
- 
+
 footer {
     background: #14141473;
     height: 10rem;
     width: 100%;
-    
-    p{
+
+    p {
         text-align: center;
         font-size: 2em;
         font-weight: bolder;
@@ -61,10 +56,20 @@ footer {
 }
 
 // responsive desktop
-@media screen and (min-width: 1440px){
 
-    
-    
-    
- 
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        .navbar_header {
+            .navbar_menu {
+                display: flex;
+                .menu_container {
+                    display: flex;
+                    .menu_button{
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+    }
 }
