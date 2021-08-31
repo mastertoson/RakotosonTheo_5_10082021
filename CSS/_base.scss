@@ -15,7 +15,7 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        flex-wrap: inherit;
+        flex-wrap: wrap;
         .orinoco_icon {
             height: 7em;
         }
@@ -27,7 +27,8 @@ header {
     }
 
     .navbar_menu {
-            align-items: center;
+        flex-basis: 100%;
+        align-items: center;
         .menu_container {
             list-style-type: none;
             .menu_button {
@@ -56,7 +57,6 @@ footer {
 
 // responsive desktop
 
-
 @media (min-width: 992px) {
     .navbar-expand-lg {
         .navbar_header {
@@ -64,7 +64,7 @@ footer {
                 display: flex;
                 .menu_container {
                     display: flex;
-                    .menu_button{
+                    .menu_button {
                         margin-right: 2rem;
                     }
                 }

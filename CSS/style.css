@@ -21,8 +21,8 @@ header .navbar_header {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  -ms-flex-wrap: inherit;
-      flex-wrap: inherit;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header .navbar_header .orinoco_icon {
@@ -34,6 +34,8 @@ header .navbar_header .navbar_button_container .navbar_button {
 }
 
 header .navbar_menu {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
