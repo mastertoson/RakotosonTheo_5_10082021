@@ -61,6 +61,7 @@ footer {
     .navbar-expand-lg {
         .navbar_header {
             .navbar_menu {
+                flex-basis: 0;
                 display: flex;
                 .menu_container {
                     display: flex;

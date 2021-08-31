@@ -65,6 +65,8 @@ footer p {
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar_header .navbar_menu {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -158,6 +160,9 @@ footer p {
     margin-right: 1rem;
   }
   .cards_container .cards .text {
+    font-size: 1rem;
+  }
+  .cards_container .cards .description {
     font-size: 1rem;
   }
   .cards_container .cards .achat {
