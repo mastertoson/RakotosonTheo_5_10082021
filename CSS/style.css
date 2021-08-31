@@ -188,6 +188,18 @@ footer p {
   width: 80%;
 }
 
+.container .test2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .test2 .test {
+  width: 200px;
+}
+
 .table-container {
   width: 100%;
   display: -webkit-box;

@@ -1,11 +1,15 @@
-
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    .card{
+    .card {
         width: 80%;
-        
+    }
+    .test2 {
+        display: flex;
+        justify-content: space-around;
+        .test {
+            width: 200px;
+        }
     }
 }
-
