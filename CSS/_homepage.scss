@@ -51,6 +51,7 @@
     .achat {
       height: 5rem;
       font-size: 2rem;
+      width: 10rem;
     }
   }
 }
@@ -59,8 +60,16 @@
   .cards_container {
     
     .cards {
-      
-      
+      width: 400px;
+      margin-right: 1rem;
+      .text{
+        font-size: 1rem;
+      }
+      .achat {
+        height: 2rem;
+        font-size: 1em;
+        width: 6rem;
+      }
     }
   }
 }

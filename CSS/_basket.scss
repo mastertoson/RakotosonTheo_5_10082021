@@ -1,0 +1,31 @@
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    .table {
+        width: 80%;
+        background: rgba(47, 47, 70, 0.301);
+        border-radius: 1rem;
+        text-align: center;
+        th {
+            border:none;
+            
+        }
+        td {
+            border:none;
+            vertical-align:middle;
+        }
+    }
+}
+
+.basket-button-container{
+    width: 60%;
+    height: 10rem;  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
