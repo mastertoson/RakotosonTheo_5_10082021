@@ -41,26 +41,30 @@
         <div class="card mb-3">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="/images/icon.png" class="img-fluid rounded-start" alt="...">
+                    <img src="" class="img-fluid rounded-start " id="image" alt="...">
                 </div>
                 <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">oui</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                            similique asperiores omnis optio facere! Necessitatibus, alias aperiam quis veniam
-                            reiciendis repellat tempore mollitia quas consectetur magnam, eum, nesciunt optio
-                            architecto.</p>
-                        <p class="card-text"></p>
-                        <div class="test2">
-                            <button type="button" class="btn btn-primary">Ajouter au panier</button>
-                            <select id="option" aria-label="version" class="form-select test">
-                                <option value="oui">nombre produit</option>
-                            </select>
-                            <select id="option" aria-label="version" class="form-select test">
-                                <option value="oui">produit</option>
-                            </select>
+                    <div class="card-body" id="card-body">
+                        <div class="card_header">
+                            <h5 class="card-title" id="title"></h5>
+                            <p id="price"></p>
                         </div>
-                        
+                        <div id="option"></div>
+                        <p class="card-text" id="description"></p>
+                        <p class="card-text"></p>
+                        <div class="card_footer" id="card_footer">
+                            <button type="button" class="btn btn-primary" id="addButton" onclick="myFunction()">Ajouter au panier</button>
+                            
+                            <select id="quantity" class="form-select number-product mb-3" aria-label="Quantité">
+                                <option selected="" value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                        </div>
+
 
                     </div>
                 </div>
@@ -73,6 +77,8 @@
     </footer>
 
     <!-- script -->
+    <script src="JavaScript/functions.js"></script>
+    <script src="JavaScript/item.js"></script>
     <!-- <script src="JavaScript/paramurl.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

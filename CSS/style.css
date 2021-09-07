@@ -120,7 +120,7 @@ footer p {
 }
 
 .cards_container .cards .img {
-  height: auto;
+  min-height: 221px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -184,19 +184,47 @@ footer p {
           justify-content: center;
 }
 
-.container .card {
-  width: 80%;
+.container .card #image {
+  min-height: 221px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.container .test2 {
+.container .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.container .card .card-body .card_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .card .card-body .card_footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-.container .test2 .test {
+.container .card .card-body .card_footer .number-product {
   width: 200px;
 }
 

@@ -3,13 +3,28 @@
     align-items: center;
     justify-content: center;
     .card {
-        width: 80%;
-    }
-    .test2 {
-        display: flex;
-        justify-content: space-around;
-        .test {
-            width: 200px;
+        #image {
+            min-height: 221px;
+
+            object-fit: cover;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            .card_header {
+                display: flex;
+                justify-content: space-between;
+            }
+            .card_footer {
+                display: flex;
+                justify-content: space-around;
+                align-items: baseline;
+                .number-product {
+                    width: 200px;
+                }
+            }
         }
     }
 }
