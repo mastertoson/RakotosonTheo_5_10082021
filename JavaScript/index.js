@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  
   fetch(apiurl)
     .then((res) => res.json())
     .then((data) => {
@@ -7,16 +6,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       data.forEach((element) => {
         console.log(element.name);
-
-        
-
         createElement(element);
-        
       });
     })
     .catch((error) => {
       alert("erreur");
     });
-
-  
 });

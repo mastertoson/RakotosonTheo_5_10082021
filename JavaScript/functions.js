@@ -20,6 +20,27 @@ function createElement(element) {
   }
 
 
+// creation localstorage
 
+
+
+const btn = document.querySelector("#addButton");
+const sb = document.querySelector("#select");
+
+btn.onclick = (event) => {
+    event.preventDefault();
+    alert(sb.SelectIndex);
+};
+
+
+
+
+
+
+
+function addToLocalStorage(){
+
+    
+}
 
 

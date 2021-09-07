@@ -24,11 +24,17 @@ fetch(newUrl)
     function test(element) {
       const card = document.getElementById("option");
 
+      // creation label
+      let selectLabel = document.createElement("label");
+      selectLabel.setAttribute("id", "label")
+      selectLabel.setAttribute("for", "select")
+      // creation select
       let select = document.createElement("select");
       select.setAttribute("name", "lenses");
       select.setAttribute("id", "select");
       select.setAttribute("class", "form-select");
-
+      
+      // creation lenses
       lenses.forEach((element) => {
         let option = document.createElement("option");
         option.value = element;
