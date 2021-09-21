@@ -18,10 +18,16 @@
         td {
             border:none;
             vertical-align:middle;
+            .image{
+                width: 300px;
+                border-radius: 1rem;
+            }
         }
     }
 }
-
+#collapseExample{
+    width: 80%;
+}
 .basket-button-container{
     width: 60%;
     height: 10rem;  

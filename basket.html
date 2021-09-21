@@ -51,14 +51,7 @@
                   <th>Sous-total</th>
                </tr>
             </thead>
-            <tbody>
-               <td><img src="/images/icon.png" alt=""></td>
-               <td>oui</td>
-               <td>oui</td>
-               <td>oui</td>
-               <td>ouii</td>
-               <td>oui</td>
-            </tbody>
+
             <tfoot>
                <tr>
                   <td></td>
@@ -66,16 +59,93 @@
                   <td></td>
                   <td></td>
                   <th>Total :</th>
-                  <td>12313</td>
+                  <td id="total">12313</td>
                </tr>
             </tfoot>
-            
-         </table><div class="basket-button-container">
-         <button value="button" class="btn btn-warning" onclick="deleteBasket()">Vider Panier</button>
-         <button value="button" class="btn btn-primary">Valider Panier</button>
+
+         </table>
+
+         <!-- form -->
+         <form class="row g-3 needs-validation collapse" id="collapseExample"  novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Prénom</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Ex: 'ori'" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Ex: 'noco'" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Adresse</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="Ex: 'Oricity'" required>
+              <div class="invalid-feedback">
+               s'il vous plait inserez une adresse valide
+              </div> 
+            </div>
+            <div class="col-md-3">
+               <label for="validationCustom05" class="form-label">Email</label>
+               <input type="email" class="form-control" id="validationCustom05" placeholder="Ex: 'Orinoco@mail.com'" required>
+               <div class="invalid-feedback">
+                  s'il vous plait inserez un email valide
+               </div>
+             </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Code Postal</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Ex: '10000'" required>
+              <div class="invalid-feedback">
+               s'il vous plait inserez un code postal valide
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Accepter les termes et conditions de vente
+                </label>
+                <div class="invalid-feedback">
+                  s'il vous plait Acceptez les termes avant de continuer
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit" >Passer la commande</button>
+            </div>
+          </form>
+         
+         <div class="basket-button-container">
+            <!-- validation vidage panier -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Vider panier</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <p>Voulez-vous vraiment vider le panier ?</p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary" id="viderpanier"
+                           data-bs-dismiss="modal">Vider</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- bouttons valider panier et vider panier -->
+            <button value="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Vider
+               Panier</button>
+            <button value="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Valider commande</button>
+         </div>
       </div>
-      </div>
-      
+
    </main>
 
    <footer>
@@ -85,6 +155,7 @@
 
    <!-- script -->
    <script src="JavaScript/basket.js"></script>
+   <script src="JavaScript/functions.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"></script>

@@ -27,7 +27,7 @@ fetch(newUrl)
       // creation label
       let selectLabel = document.createElement("label");
       selectLabel.setAttribute("id", "label")
-      selectLabel.setAttribute("for", "select")
+      selectLabel.setAttribute("for", "lenses")
       // creation select
       let select = document.createElement("select");
       select.setAttribute("name", "lenses");
@@ -42,7 +42,9 @@ fetch(newUrl)
         select.add(option);
         select.append(option);
       });
+      
       card.append(select);
+      card.append(selectLabel);
     }
 
     // change_valeur();
@@ -50,6 +52,45 @@ fetch(newUrl)
     //   value = document.getElementById("option").value;
     // }
 
+    const addButton = document.getElementById("addButton");
+
+        addButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            const selectedlense = document.getElementById("select");
+            const selectedquantity = document.getElementById("quantity");
+              let lenses = selectedlense.value;
+              let quantity = selectedquantity.value;
+
+            
+         console.log(localStorage);
+            
+            if(localStorage.getItem('basket')){basket = JSON.parse(localStorage.getItem('basket')) } else {
+              var   basket = []; }
+  
+               Product={};
+               Product.id=id;
+               Product.name=name;
+               Product.lense=lenses;
+               Product.quantity=quantity;
+               Product.price=price;
+               Product.image=image;
+
+              basket.push(Product);
+              
+              
+               
+              localStorage.setItem("basket", JSON.stringify(basket));
+
+
+              window.alert("Produit ajouté dans le panier");
+              
+            
+             
+            
+            
+          });
+
+          
   })
   .catch((error) => {
     alert("erreur");

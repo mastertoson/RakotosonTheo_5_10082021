@@ -155,6 +155,12 @@ footer p {
 }
 
 @media (min-width: 992px) {
+  .cards_container {
+    padding: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .cards_container .cards {
     width: 400px;
     margin-right: 1rem;
@@ -261,6 +267,15 @@ footer p {
 .table-container .table td {
   border: none;
   vertical-align: middle;
+}
+
+.table-container .table td .image {
+  width: 300px;
+  border-radius: 1rem;
+}
+
+#collapseExample {
+  width: 80%;
 }
 
 .basket-button-container {
