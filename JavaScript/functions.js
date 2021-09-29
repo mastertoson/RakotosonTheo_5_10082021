@@ -37,14 +37,15 @@ function test() {
       
       
     });
-    console.log(productt.product);
-    let totalbasket = 0;
-    for (let nombreproduit = 0; nombreproduit < Productt.Product; nombreproduit++){
+
+  //   console.log(product);
+  //   let totalbasket = 0;
+  //   for (let nombreproduit = 0; nombreproduit < Productt.Product; nombreproduit++){
       
-      totalbasket = totalbasket+Product.price*Product.quantity;
-      console.log(totalbasket/100);
-    };
-   totalpric.innerHTML = totalbasket;
+  //     totalbasket = totalbasket+Product.price*Product.quantity;
+  //     console.log(totalbasket/100);
+  //   };
+  //  totalpric.innerHTML = totalbasket;
   
   } else {
     nottable();
