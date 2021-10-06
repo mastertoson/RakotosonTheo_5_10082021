@@ -69,36 +69,36 @@
          <form class="row g-3 needs-validation collapse" id="collapseExample"  novalidate>
             <div class="col-md-4">
               <label for="validationCustom01" class="form-label">Prénom</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="Ex: 'ori'" required>
+              <input type="text" class="form-control" id="firstName" placeholder="Ex: 'ori'" pattern="^(([a-zA-ZÀ-ÿ]+[\s\-]{1}[a-zA-ZÀ-ÿ]+)|([a-zA-ZÀ-ÿ]+))$" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-4">
               <label for="validationCustom02" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="Ex: 'noco'" required>
+              <input type="text" class="form-control" id="lastName" placeholder="Ex: 'noco'" pattern="^(([a-zA-ZÀ-ÿ]+[\s\-]{1}[a-zA-ZÀ-ÿ]+)|([a-zA-ZÀ-ÿ]+))$" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-6">
               <label for="validationCustom03" class="form-label">Adresse</label>
-              <input type="text" class="form-control" id="validationCustom03" placeholder="Ex: 'Oricity'" required>
+              <input type="text" class="form-control" id="address" placeholder="Ex: 'Oricity'" pattern="^(([a-zA-ZÀ-ÿ0-9]+[\s\-]{1}[a-zA-ZÀ-ÿ0-9]+)){1,10}$" required>
               <div class="invalid-feedback">
                s'il vous plait inserez une adresse valide
               </div> 
             </div>
             <div class="col-md-3">
                <label for="validationCustom05" class="form-label">Email</label>
-               <input type="email" class="form-control" id="validationCustom05" placeholder="Ex: 'Orinoco@mail.com'" required>
+               <input type="email" class="form-control" id="email" placeholder="Ex: 'Orinoco@mail.com'" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$" required>
                <div class="invalid-feedback">
                   s'il vous plait inserez un email valide
                </div>
              </div>
             <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Code Postal</label>
-              <input type="text" class="form-control" id="validationCustom05" placeholder="Ex: '10000'" required>
-              <div class="invalid-feedback">
+              <label for="validationCustom06" class="form-label">Ville</label>
+              <input type="text" class="form-control" id="city" placeholder="Ex: 'orinococity'" pattern="^(([a-zA-ZÀ-ÿ]+[\s\-]{1}[a-zA-ZÀ-ÿ]+)|([a-zA-ZÀ-ÿ]+)){1,10}$" required >
+              <div class="invalid-feedback" >
                s'il vous plait inserez un code postal valide
               </div>
             </div>
@@ -114,7 +114,7 @@
               </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary" type="submit" >Passer la commande</button>
+              <button class="btn btn-primary" type="submit" id="commandValidation" >Passer la commande</button>
             </div>
           </form>
          
@@ -148,9 +148,7 @@
 
    </main>
 
-   <footer>
-      <p>Orinoco</p>
-   </footer>
+
 
 
    <!-- script -->

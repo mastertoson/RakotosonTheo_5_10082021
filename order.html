@@ -37,56 +37,25 @@
         </nav>
     </header>
 
-    <main >
+    <main>
+
         <div class="information_container">
-        <h1 class="title">information</h1>
-        <div class="information">
-            <p>merci</p>
-            <p>votre commande 22313213213 d'un montant de 3030€ est validée</p>
-            <p>référence :</p>
-            <p>envoyé par mail à : </p>
-            <p>sera envoyé a l'adresse :</p>
-            <p>nom prenom</p>
-            <p>adresse</p>
-            <p>ville</p>
+            <div class="information_box">
+                <h1 class="title">information</h1>
+                <div class="information" id="information"></div>
+            </div>
         </div>
-        <div class="recap">
-            <div class="table-container">
-                <table class="table">
-                   <thead>
-                      <tr>
-                         <th>Produit</th>
-                         <th>Nom</th>
-                         <th>Option</th>
-                         <th>Quantité</th>
-                         <th>Prix</th>
-                         <th>Sous-total</th>
-                      </tr>
-                   </thead>
-       
-                   <tfoot>
-                      <tr>
-                         <td></td>
-                         <td></td>
-                         <td></td>
-                         <td></td>
-                         <th>Total :</th>
-                         <td id="total">12313</td>
-                      </tr>
-                   </tfoot>
-       
-                </table>
+        <div class="print_container">
+            <button value="button" class="btn btn-dark "  onclick="window.print()" >Imprimer la commande</button>
         </div>
-    </div>
+
     </main>
 
-    <footer>
-        <p>Orinoco</p>
-    </footer>
+
 
 
     <!-- script -->
-    <script src="JavaScript/basket.js"></script>
+    <script src="JavaScript/order.js"></script>
     <script src="JavaScript/functions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

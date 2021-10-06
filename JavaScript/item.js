@@ -3,7 +3,7 @@ let params = new URL(document.location).searchParams;
 let id = params.get("_id");
 console.log(id);
 const newUrl = `https://teddies-api.herokuapp.com/api/cameras/${id}`;
-
+console.log();
 fetch(newUrl)
   .then((res) => res.json())
   .then((data) => {
@@ -47,10 +47,6 @@ fetch(newUrl)
       card.append(selectLabel);
     }
 
-    // change_valeur();
-    // function change_valeur() {
-    //   value = document.getElementById("option").value;
-    // }
 
     const addButton = document.getElementById("addButton");
 
@@ -84,10 +80,6 @@ fetch(newUrl)
 
               window.alert("Produit ajouté dans le panier");
               
-            
-             
-            
-            
           });
 
           
