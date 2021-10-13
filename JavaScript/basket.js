@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   basketProduct = basketJSON && JSON.parse(basketJSON);
 
   // affichage des produits
-  test();
+  listOfProduct();
 
   let total = document.getElementById("total");
 

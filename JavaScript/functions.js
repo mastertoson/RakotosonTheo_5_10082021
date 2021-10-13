@@ -28,18 +28,11 @@ function createElement(element) {
 // BASKET.JS //
 
 // affichage des produits
-function test() {
+function listOfProduct() {
   if (basketProduct != null) {
-    
-
     basketProduct.forEach((Product) => {
       createE(Product);
-      
-      
     });
-
-  
-  
   } else {
     nottable();
   }
@@ -72,8 +65,4 @@ function nottable() {
                  <td id="price"></td>
                  <td id="sousTotal"></td>
       </tbody>`;
-};
-
-
-  
-
+}
