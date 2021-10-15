@@ -5,11 +5,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // parse de l'objet du localstorage
   OrderProduct = Order && JSON.parse(Order);
   basketProduct = basket && JSON.parse(basket);
-
-  console.log(OrderProduct.contact);
-  console.log(basketProduct);
-  console.log();
-
   // recuperation données localstorage
   let nom = OrderProduct.contact.lastName;
   let prenom = OrderProduct.contact.firstName;

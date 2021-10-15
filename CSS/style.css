@@ -250,12 +250,12 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 10rem;
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
 .table-container .table {
   width: 80%;
-  background: rgba(47, 47, 70, 0.301);
+  background: rgba(36, 36, 53, 0.164);
   border-radius: 1rem;
   text-align: center;
 }
@@ -292,6 +292,7 @@ footer p {
 }
 
 .information_container {
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,6 +302,7 @@ footer p {
 }
 
 .information_container .information_box {
+  padding: 2rem;
   width: 80%;
   font-size: 2em;
   display: -webkit-box;
@@ -309,9 +311,9 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: solid 0.1rem rgba(5, 5, 5, 0.199);
-  -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.65), 0 1px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.65), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: solid 0.1rem rgba(5, 5, 5, 0.027);
+  -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.432), 0 1px 2px rgba(0, 0, 0, 0.034);
+          box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.432), 0 1px 2px rgba(0, 0, 0, 0.034);
   border-radius: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+  // fetch de l'url de l'api
   fetch(apiurl)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
-
+      // pour chaque element de l'api lance la fonction createElement
       data.forEach((element) => {
-        console.log(element.name);
-        createElement(element);
+        createCards(element);
       });
     })
     .catch((error) => {

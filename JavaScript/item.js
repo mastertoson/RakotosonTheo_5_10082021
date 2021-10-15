@@ -1,14 +1,12 @@
 // recuperation des param url
 let params = new URL(document.location).searchParams;
 let id = params.get("_id");
-console.log(id);
-const newUrl = `https://teddies-api.herokuapp.com/api/cameras/${id}`;
+const apiUrl = `https://teddies-api.herokuapp.com/api/cameras/${id}`;
 
-fetch(newUrl)
+fetch(apiUrl)
   .then((res) => res.json())
   .then((data) => {
-    
-
+    // affichage des données de l'url en fonction de l'id
     let lenses = data.lenses;
     let image = data.imageUrl;
     let description = data.description;
@@ -45,7 +43,7 @@ fetch(newUrl)
     card.append(selectLabel);
 
     const addButton = document.getElementById("addButton");
-
+    // envoie dans le localstorage des options choisis
     addButton.addEventListener("click", (e) => {
       e.preventDefault();
       const selectedlense = document.getElementById("select");
@@ -77,5 +75,3 @@ fetch(newUrl)
   .catch((error) => {
     alert("erreur");
   });
-
-
